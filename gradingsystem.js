@@ -1,5 +1,5 @@
 // Initialize studentMarks with a valid score (between 0 and 100)
-let studentScore = 38; // Example score, you can change this value
+let studentScore = 38; // Example score
 
 // Function to determine the grade based on studentMarks
 function determineGrade() {
