@@ -18,8 +18,4 @@ function checkSpeed(speed) {
         }
     }
 }
-
-// Example usage:
-checkSpeed(80);  // Output: Points: 2
-checkSpeed(700);  // Output: Ok
-checkSpeed(100); // Output: Points: 6
+checkSpeed(80);  

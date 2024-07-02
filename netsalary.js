@@ -72,7 +72,7 @@ function calculateNetSalary(basicSalary, benefits) {
                 return rate.amount;
             }
         }
-        return 3500; // default to highest rate if gross salary is above the highest bracket
+        return 3500; 
     }
 
     // Function to calculate NSSF deduction
@@ -107,5 +107,4 @@ function calculateNetSalary(basicSalary, benefits) {
     console.log(`Net Salary: ${salarySummary.netSalary.toFixed(2)}`);
 }
 
-// Example usage:
-calculateNetSalary(50000, 8000); // Output 
+calculateNetSalary(50000, 8000); 
