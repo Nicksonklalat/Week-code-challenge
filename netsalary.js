@@ -57,9 +57,11 @@ function calculateNetSalary(basicSalary, benefits) {
                 break;
             }
             
-            const taxableAmount = Math.min(remainingIncome, bracket.max - bracket.min + 1);
-            taxPayable += taxableAmount * bracket.rate;
-            remainingIncome -= taxableAmount;
+            let taxableAmount;
+if (remainingIncome < bracket.max - bracket.min + 1) {
+    taxableAmount = remainingIncome;
+} else {
+    taxableAmount = bracket.max - bracket.min + 1;
         }
         
         return taxPayable;
